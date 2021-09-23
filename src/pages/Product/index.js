@@ -2,16 +2,21 @@ import { style } from 'dom-helpers'
 import React, {useState, useEffect} from 'react'
 import {Container} from 'react-bootstrap'
 import styles from '../Product/Product.module.css'
+import {useSelector, useDispatch} from 'react-redux'
+import allActions from '../../redux/actions'
 export default function Product() {
+
+    const [temp, setTemp] = useState(0);
+    const dispatch = useDispatch()
     const [product, setProduct] = useState({});
-    useEffect (()=>{
-       fetch('https://fakestoreapi.com/products/2')
-      .then(res=>res.json())
-      .then(json=>{
-          setProduct(json)
-          console.log(json)
-      })
-    },[]);  
+    const {productsData} = useSelector(state=>state.products);
+    useEffect(() => {
+        dispatch(allActions.productActions.fetchProducts())
+      }, [temp])
+    useEffect(()=>{
+        setProduct(productsData[1])
+    },[productsData])
+
     return (
         <Container>
             {product?(

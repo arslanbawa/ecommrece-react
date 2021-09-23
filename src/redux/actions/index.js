@@ -1,7 +1,7 @@
-import postActions from './postActions'
+import productActions from './productActions'
 
 const allActions = {
-    postActions
+    productActions
 }
 
 export default allActions

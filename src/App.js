@@ -1,17 +1,20 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ProductPage from './pages/Product'
+import Product from './pages/Product'
+import Home from './pages/Home'
+import Collection from './pages/Collection'
+import Checkout from './pages/Checkout'
+import Cart from './pages/Cart'
 import Redux from './redux'
+import ErrorPage from './pages/ErrorPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
-  Link,
-  useRouteMatch
+  Redirect
 } from "react-router-dom";
 
 function App() {
@@ -32,10 +35,15 @@ function App() {
       <Redux />
       <Router>
         <Switch>
-          <Route>
-            <Route path="/products" component={ProductPage} />
-            <Redirect exact from="/" to="/products?id=2" /> 
-          </Route>
+            <Redirect from='/' to='/home' exact/>
+            <Route path="/home" component={Home}  exact/>
+            <Route path="/products" component={Product} exact />
+            <Route path="/collections" component={Collection}  exact/>
+            <Route path="/cart" component={Cart} exact />
+            <Route path="/checkout" component={Checkout} exact />           
+            <Route path="*" >
+              <ErrorPage />
+            </Route>
         </Switch>
       </Router>
       <Footer />
