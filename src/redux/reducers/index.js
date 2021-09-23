@@ -1,8 +1,8 @@
-import posts from './posts'
+import products from './products'
 import {combineReducers} from 'redux'
 
 const rootReducer = combineReducers({
-    posts
+    products
 })
 
 export default rootReducer
