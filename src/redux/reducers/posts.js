@@ -1,24 +1,26 @@
+
+
 const initialState={
-    productsData:[],
+    postItems:[],
     loading: false,
     error:null,
 }
 
-const products=(state=initialState, action)=>{
+const posts=(state=initialState, action)=>{
     switch(action.type){
-        case "FETCH_PRODUCTS_REQUEST":
+        case "FETCH_POSTS_REQUEST":
             return{
                 ...state, 
                 loading:true,
                 error:null,
             }
-        case "FETCH_PRODUCTS_SUCCESS":
+        case "FETCH_POSTS_SUCCESS":
             return{
                 ...state,
                 loading:false,
-                productsData:action.payload
+                postItems:action.payload
             }  
-        case "FETCH_PRODUCTS_FAILURE":
+        case "FETCH_POSTS_FAILURE":
             return{
                 ...state,
                 loading:false,
@@ -29,4 +31,4 @@ const products=(state=initialState, action)=>{
     }
 }
 
-export default products;
+export default posts;
