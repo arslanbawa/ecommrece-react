@@ -1,0 +1,108 @@
+.home_container{
+    width: 100%;
+    height: 89.7vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0011/6680/3007/files/Slide-2_1400x.jpg?v=1522679081');
+  background-repeat: no-repeat;
+  background-size: 100% 89.7vh;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+  
+  
+  }
+  
+  
+  .content {
+      position: absolute;
+      bottom: 10;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.404); /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      height: 637px;
+    }
+    .h1text{
+        margin-top: 60px;
+        font-family: ui-monospace;
+        font-weight: bold;
+    }
+    .h6text{
+     
+      font-size: 35px;
+      font-weight: bold;
+      font-family: cursive
+     
+    }
+    .card{
+        width: 300px;
+        height: 220px;
+        margin-left: -10px;
+        margin-top: 47px;
+        background-color: rgba(3, 3, 3, 0.164);
+        border-radius: 12px;
+        border: cornsilk solid 2px;
+    }
+    .cardh3{
+     
+        color: rgb(255, 255, 255);
+    }
+    .caption{
+      margin-top: 20px;
+      font-family:  cursive;
+      color: rgb(255, 255, 255);
+  
+    }
+    .h1text{
+        margin-left: -903px;
+          font-family:cursive;;
+    }
+/* button styling  */
+
+.box {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.582), rgba(15, 15, 15, 0.884));
+	color: white;
+	--width: 160px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid rgb(20, 20, 18);
+     border-radius: 17px;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+    margin-left: 160px;
+}
+
+.box:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box:hover::before {
+	left: 100%;
+} 
+.img_set{
+  height: 600px;
+  width: 100%;
+  object-fit:cover;
+}
