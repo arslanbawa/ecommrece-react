@@ -31,9 +31,9 @@ function App() {
       <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
       {/* FA End */}
 
-      <Header />
-      <Redux />
+      
       <Router>
+      <Header />
         <Switch>
             <Redirect from='/' to='/home' exact/>
             <Route path="/home" component={Home}  exact/>

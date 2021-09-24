@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Nav } from 'react-bootstrap';
 import styles from '../Footer/Footer.module.css'
 export default function index() {
+
     return (
         <div>
             <Container>
