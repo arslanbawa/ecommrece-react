@@ -1,0 +1,49 @@
+.main_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product_wrapper {
+    max-width: 24%;
+    border: 2px solid rgb(231, 231, 231);
+    
+}
+    .img_wrapper {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 10px 0;
+    }
+    img {
+        max-width: 200px;
+        max-height: 200px;
+
+    }
+    .checked{
+        color: orange;
+    }
+.title_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 14px;
+    margin: 2px;
+    max-width: 72%;
+}
+.price {
+    margin: 0;
+}
+
+.rating {
+    margin: 5px 2px;
+}
+.rating_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+

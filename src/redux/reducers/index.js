@@ -1,8 +1,10 @@
-import posts from './posts'
+import products from './products'
+import cartData from './cart'
 import {combineReducers} from 'redux'
 
 const rootReducer = combineReducers({
-    posts
+    products,
+    cartData
 })
 
 export default rootReducer

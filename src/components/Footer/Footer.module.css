@@ -1,0 +1,117 @@
+.footerNav
+{
+    display: flex;
+    place-content: space-between;
+}
+.footer{
+    background-color: #2b2b2b;
+    display: flex;
+    padding-bottom: 20px;
+    
+  
+  }
+  .footer_section{
+    margin-left: 70px;
+    
+  }
+  .footer_logo_article{
+      color: white;
+       font-size: 15px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       margin-top: 25px;
+  }
+  .footer_social_wrap{
+      margin-left: 44px;
+      margin-top: 30px;
+      width: 247px; 
+      
+  }
+  .footer_ul{
+      display: flex;
+      justify-content: space-between;
+   
+  }
+  .footer_li{
+    list-style-type: none;
+    color: cornsilk;
+  }
+  
+  .footer_section_links{
+    margin-left: 120px; 
+    }
+    .footer_section_links_li{
+      margin-top: 20px;
+      }
+    .footer_a{
+      text-decoration: none;
+      color: white;
+      margin-top: 20px;
+      
+      }
+   
+  .footer_manage{
+      display: flex;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  }
+  .footer_h1 {
+      color: white; 
+      font-size: 24px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-right: 44px;
+      margin-top: 30px;
+     
+       }
+  .input_container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 233, 233);
+    min-width: 50px;
+    text-align: center;
+  }
+  .form_table{
+      margin-top:22px; 
+      display: flex;
+  }
+  .input_field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin-right: 58px;
+    margin-top: 40px;
+  }
+  .form_div_i{
+    list-style-type: none;
+  
+  }
+  .form_div_i:hover{
+    background-color: rgb(136, 135, 135);
+  }
+  .img{
+      object-fit: cover;
+      margin-top: 18px;
+  }
+  .bgcolor_third_sec{
+      background-color: #f6f6f6;
+      margin-top: 38px;
+  }
+  .iconimage{
+     margin-right: 30px;
+      background: cornsilk;
+     
+  }
+  .iconcolor{
+      color: rgb(255, 255, 255);
+  }
+  .footlogo{
+      width: 200px;
+  }
+  .footer_paragrap{
+      color: rgb(255, 255, 255);
+  }
