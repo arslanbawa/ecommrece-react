@@ -1,11 +1,16 @@
 import React from 'react'
-import Grid from '../../components/grid/Grid'
-
-export default function index() {
+import Grid from '../../components/Grid'
+import { Container } from 'react-bootstrap';
+const index = () => {
+    
+    
     return (
         <div>
-                <h1>Home</h1>
-                <Grid name={"jewelery"} />
-        </div>
+        <Container>
+                <Grid name="electronics" />
+        </Container>
+      </div>
+        
     )
 }
+export default index;

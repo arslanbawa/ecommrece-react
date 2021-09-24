@@ -8,7 +8,7 @@ const Redux = () => {
   useEffect(() => {
     dispatch(allActions.productActions.fetchProducts())
   }, [temp])
-// console.log(productsData)
+
   return (
     <div>
           {/* <h1>Hello Redux Thunk</h1> */}

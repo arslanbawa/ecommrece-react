@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Product from './pages/Product'
@@ -9,6 +9,10 @@ import Cart from './pages/Cart'
 import Redux from './redux'
 import ErrorPage from './pages/ErrorPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Grid from './components/Grid'
+
+import {useSelector, useDispatch} from 'react-redux'
+import allActions from './redux/actions'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,9 +20,7 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-
 function App() {
-
   return (  
     <div className="App">
       {/* Slick SLider */}
@@ -31,9 +33,9 @@ function App() {
       <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
       {/* FA End */}
 
-      <Header />
-      <Redux />
+      
       <Router>
+      <Header />
         <Switch>
             <Redirect from='/' to='/home' exact/>
             <Route path="/home" component={Home}  exact/>
