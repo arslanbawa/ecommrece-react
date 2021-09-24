@@ -12,6 +12,9 @@ import {
 
 const Cart = () => {
     const [products, setProducts] = useState([])
+    const [total, setTotal] = useState(0)
+    let subtotal = 0; 
+    
 
     // useEffect(()=>{
     //     fetch('https://fakestoreapi.com/products')
@@ -28,15 +31,23 @@ const Cart = () => {
       
     const {cartProducts} = useSelector(state=>state.cartData);
 
-
     console.log(cartProducts)
+
+    const handlerFlateRate = () => {
+        setTotal(subtotal + 10);
+        console.log("total " + total)
+    }
+    const handlerLocalDelivery = () =>{
+        setTotal(subtotal + 20);
+        console.log("total " + total)
+    }
     return (
         <Container>
             <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
     <script></script>
             <div className="cart-main">
                 <h1 className={styles.cartMainh1}>Shopping Cart</h1>
-                <p  className={styles.cartPara}><Link to="/ShoppingCart">Home</Link> | <Link to="/ShoppingCart">Shop</Link></p>
+                <p  className={styles.cartPara}><Link to="/home">Home</Link> | <Link to="/home">Shop</Link></p>
             
                 <Table striped bordered hover>
                     <thead className="table-dark">
@@ -52,6 +63,9 @@ const Cart = () => {
                     <tbody>
                         {
                             cartProducts.map((product, index)=>{
+
+                                subtotal+=product.price * product.quantity;
+                                {/* setSubtotal(subtotal + (product.price * product.quantity)) */}
                              
                                 return(
                                     <tr key={index}>
@@ -79,7 +93,7 @@ const Cart = () => {
                         <div className={styles.checkoutTotal}>
                             <div className={styles.SubtotalSpan}>
                                 <span>Subtotal</span>
-                                <span> $199.70</span>
+                                <span>${subtotal}</span>
                             </div>
                             <span className={styles.shippingSpan}>Shipping</span>
                             <div className={styles.inputLabel}>
@@ -90,14 +104,18 @@ const Cart = () => {
                                     </div>
                                 </label><br/>
 
-                                <input type="radio" id="flat-rate" name="shipping"/>
+                                <input type="radio" id="flat-rate" name="shipping"
+                                    onClick={handlerFlateRate}
+                                />
                                 <label htmlFor="flat-rate">
                                     <div className={styles.labelSpan}>
                                             <span>Flat Rate</span><span>+$10.00</span>
                                     </div>
                                 </label><br/>
 
-                                <input type="radio" id="local-delivery" name="shipping"/>
+                                <input type="radio" id="local-delivery" name="shipping"
+                                    onClick={handlerLocalDelivery}
+                                />
                                 <label htmlFor="local-delivery">
                                     <div className={styles.labelSpan}>
                                         <span>Local Delivery</span><span>+$20.00</span>
@@ -108,7 +126,7 @@ const Cart = () => {
                                 <span className={styles.calShipping}>Calculate Shipping</span>
                             </div>
                             <div className={styles.totalCost}>
-                                <span>Total</span><span>$199.70</span>
+                                <span>Total</span><span>${total}</span>
                             </div>
                             <div>
                                 <button className={styles.ProceedToCheckout}>PROCEED TO CHECKOUT</button>
