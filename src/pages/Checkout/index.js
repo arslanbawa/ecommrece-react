@@ -3,7 +3,7 @@ import React from 'react'
 export default function index() {
     return (
         <div>
-              <h1>Cart</h1>
+                <h1>Checkout</h1>
         </div>
     )
 }

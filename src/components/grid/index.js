@@ -18,7 +18,7 @@ import allActions from '../../redux/actions'
        return(
         
         <div className={styles.product_wrapper} >
-            <Link to={`/products?id=${props.product.id-1}`}>
+            <Link to={`/products?id=${props.product.id}`}>
         <div className={styles.img_wrapper}>
              <img src={props.product.image}></img>
         </div>
