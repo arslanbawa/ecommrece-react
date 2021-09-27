@@ -2,3 +2,21 @@
 {
     width:100%;
 }
+.productImage{
+    width: 200px;
+}
+.productTitle{
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.QuantityText{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 30px 0px 0px;
+}
+.productPrice{
+    text-align: left;
+    font-weight: 700;
+    font-size: 28px;
+}

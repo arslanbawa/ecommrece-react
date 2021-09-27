@@ -1,0 +1,20 @@
+.mainLogin{
+    width: 30%;
+    margin: 60px auto;
+    background-color: #f5f5f5;
+    padding: 30px 30px;
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+.mainLogin:hover{
+    box-shadow: 0px 0px 10px 5px #999999;
+}
+.loginHeading{
+    font-weight: 400;
+}
+.mainLoginWrap{
+    text-align: left;
+}
+.loginButton{
+    text-align: center;
+}

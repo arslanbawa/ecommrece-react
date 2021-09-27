@@ -13,3 +13,162 @@ height: 400px;
 {
   margin: 50px 0;
 }
+.product-form
+{
+  text-align: -webkit-center;
+}
+/* product form */
+.product-price
+{
+  text-align-last: center;
+}
+
+.quantity-wrap
+{
+  text-align: -webkit-center;
+}
+/* end of product form */
+/* Quantity Input */
+
+.quantity-input {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 3px;
+  margin: 30px 0;
+}
+.quantity-input:focus {
+  background: red;
+}
+
+.quantity-input__modifier,
+.quantity-input__screen {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+.quantity-input__modifier {
+  padding: 0.7rem;
+  width: 3rem;
+  background: #f3f3f3;
+  color: #888;
+  border: 0 solid #dbdbdb;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.quantity-input__modifier:hover {
+  background: #dadada;
+  color: #555555;
+}
+.quantity-input__modifier--left {
+  border-radius: 3px 0 0 3px;
+}
+.quantity-input__modifier--right {
+  border-radius: 0 3px 3px 0;
+}
+
+.quantity-input__screen {
+  width: 4rem;
+  padding: 0.4rem;
+  border: 0;
+  border-top: 0 solid #dbdbdb;
+  border-bottom: 0 solid #dbdbdb;
+  text-align: center;
+}
+
+.quantity-wrap
+{
+  max-width:fit-content;
+}
+/* End Quantity Input */
+
+.slick-next:before, .slick-prev:before
+{
+  color: #000 !important;
+}
+
+.slick-next {
+  right: 3% !important;
+  height: 100px;
+  width: 100px;
+}
+.slick-prev
+{
+  left:3% !important;
+}
+.slick-slider button, .slick-slider button *
+{
+  z-index:999
+}
+.slick-next:before, .slick-prev:before
+{
+  font-size:40px
+}
+
+nav a
+{
+  font-size:12px;
+}
+
+.slick-slide img
+{
+  max-height: 500px !important;
+  object-fit: cover;
+}
+.slick-track {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.fa{color:#FCDD0D;}
+
+.Grid_cartButton__31ykQ
+{
+  background: rgb(164 208 253);
+}
+
+.Grid_cartButton__31ykQ:hover
+{
+  background:rgb(21 110 202);
+}
+.Grid_rating__1wun9
+{
+  font-size:12px;
+  color:#555555;
+}
+
+.Grid_price__3x7xq
+{
+  font-size:13px;
+}
+
+.product-page-wrap .Product_productImgWrap__wh6gO
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-form, .product-form p
+{
+  text-align: left;
+}
+.product-description
+{  display: flex;
+flex-direction: column;
+text-align: -webkit-left;
+margin: 50px 40px;
+}
+.product-description p
+{
+  font-size: 14px;
+  color:#555555;
+}
+p
+{
+  
+}

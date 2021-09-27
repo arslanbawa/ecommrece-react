@@ -1,49 +1,24 @@
 import React from 'react'
 import { Container, Nav } from 'react-bootstrap';
 import styles from '../Footer/Footer.module.css'
+import {Link} from 'react-router-dom'
 export default function index() {
+
     return (
-        <div>
-            <Container>
+            
               <div className={styles.footerNav}>
-                <Nav defaultActiveKey="/home" className="flex-column">
-                    
-                        <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link eventKey="link-1">Products</Nav.Link>
-                        <Nav.Link eventKey="link-2">Collections</Nav.Link>
-                        <Nav.Link eventKey="link-3">
-                            About us
-                        </Nav.Link>
-                </Nav>
-                <Nav defaultActiveKey="/home" className="flex-column">
-                    
-                    <Nav.Link href="/home">Home</Nav.Link>
-                    <Nav.Link eventKey="link-1">Products</Nav.Link>
-                    <Nav.Link eventKey="link-2">Collections</Nav.Link>
-                    <Nav.Link eventKey="link-3" >
-                        About us
-                    </Nav.Link>
-                    </Nav>
-                    <Nav defaultActiveKey="/home" className="flex-column">
-                            
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link eventKey="link-1">Products</Nav.Link>
-                            <Nav.Link eventKey="link-2">Collections</Nav.Link>
-                            <Nav.Link eventKey="link-3" >
-                                About us
-                            </Nav.Link>
-                    </Nav>
-                    <Nav defaultActiveKey="/home" className="flex-column">
-                            
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link eventKey="link-1">Products</Nav.Link>
-                            <Nav.Link eventKey="link-2">Collections</Nav.Link>
-                            <Nav.Link eventKey="link-3" >
-                                About us
-                            </Nav.Link>
-                    </Nav>
+                    <Container>
+                        <Nav defaultActiveKey="/home" className=""> 
+                            <Nav className="me-auto">
+                                <Nav.Link><Link className={styles.navLinks} to="/">Home</Link></Nav.Link>
+                                <Nav.Link><Link className={styles.navLinks} to="/Collections?id=men%27s%20clothing"> Men Cloth</Link></Nav.Link>
+                                <Nav.Link><Link className={styles.navLinks} to="/Collections?id=women%27s%20clothing"> Women Cloth</Link></Nav.Link>
+                                <Nav.Link><Link className={styles.navLinks} to="/Collections?id=electronics"> Electronics</Link></Nav.Link>
+                                <Nav.Link><Link className={styles.navLinks} to="/Collections?id=jewelery"> Jewelery</Link></Nav.Link>
+                            </Nav>
+                        </Nav>
+                    </Container>
                </div>
-            </Container>
-        </div>
+            
     )
 }

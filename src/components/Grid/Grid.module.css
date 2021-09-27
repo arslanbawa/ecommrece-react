@@ -1,15 +1,14 @@
-/* .main_wrapper {
+.main_wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 .product_wrapper {
     width: 23%;
     border: 2px solid rgb(231, 231, 231);
     padding: 10px;
     color: black;  
-    border: 1px solid #666666;
+    /* border: 1px solid #666666; */
     margin: 30px 0px;
     font-weight: 500;
 }
@@ -25,9 +24,9 @@
     margin: 10px 0;
     text-align: center;
 }
-img {
-    max-width: 200px;
-    max-height: 200px;
+.img_wrapper img {
+        max-width: 200px;
+        max-height: 200px;
 }
 .checked{
         color: orange;
@@ -78,4 +77,21 @@ img {
     padding: 4px 0px 7px;
     text-transform: capitalize;
     text-decoration: none;
-} */
+}
+.showCollection{
+    border: none;
+    border-left: 5px solid #9fd7f1;
+    border-right: 5px solid #9fd7f1;
+    background-color: transparent;
+    width: 20%;
+    margin: 30px auto 0px;
+    padding: 7px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.showCollection:hover{
+    background-color: rgb(213, 241, 247);
+    transition: all 0.7s;
+}

@@ -1,0 +1,53 @@
+.mainCheckout{
+    margin: 50px 0px;
+}
+.mainCheckoutWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.checkOutHeading{
+    text-align: center;
+    border: none;
+    border-left: 5px solid #9fd7f1;
+    border-right: 5px solid #9fd7f1;
+    background-color: rgb(213, 241, 247);
+    width: 20%;
+    margin: 50px auto;
+    padding: 7px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.tableImg{
+    width: 70px;
+    height: 60px;
+}
+.tbodyTitle{
+    text-align: left;
+}
+.formCheckout{
+    width: 40%;
+}
+.yourOrderCheckout{
+    width: 55%;
+}
+input{
+    /* width: 95%;
+    margin: 10px auto; */
+}
+.formCheckoutButton{
+    border: none;
+    padding: 8px 24px;
+    background: gray;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.formCheckoutHeading{
+    font-weight: 600;
+}
+.thankYouMessage{
+    margin: 50px auto;
+}

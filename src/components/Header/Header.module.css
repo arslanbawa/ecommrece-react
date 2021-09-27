@@ -1,0 +1,16 @@
+.navLinks{
+    background-color: transparent;
+    border: none;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+/* .headerBar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.9;
+} */
+.headerBar{
+    box-shadow: 0px 0px 10px 5px #d3d2d2;
+}

@@ -1,5 +1,18 @@
-.footerNav
+/* .footerNav
 {
     display: flex;
     place-content: space-between;
+} */
+.footerNav{
+    padding: 15px 0px 0px;
+    border-top: 1px solid gray;
+    width: 100%;
+    margin: auto;
+}
+.navLinks{
+    background-color: transparent;
+    border: none;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
 }
